@@ -87,6 +87,22 @@ export function ClothingRack() {
     return () => window.removeEventListener("keydown", onKey);
   }, [selectedId, swipeRack]);
 
+  // Clear front preview when the rack is scrolled (phones / swipe)
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    let clearTimer = 0;
+    const onScroll = () => {
+      window.clearTimeout(clearTimer);
+      clearTimer = window.setTimeout(() => setHoveredId(null), 80);
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.clearTimeout(clearTimer);
+      el.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <LayoutGroup>
       <div className="relative flex min-h-dvh flex-col overflow-hidden bg-[#f3f3f3]">
@@ -149,8 +165,9 @@ export function ClothingRack() {
                       index={index}
                       selected={product.id === selectedId}
                       dimmed={!!selectedId && product.id !== selectedId}
+                      previewed={hoveredId === product.id}
                       onSelect={selectProduct}
-                      onHoverChange={setHoveredId}
+                      onPreviewChange={setHoveredId}
                     />
                   ))}
                 </div>
@@ -177,7 +194,12 @@ export function ClothingRack() {
                   </p>
                 ) : (
                   <p className="text-[9px] tracking-[0.14em] text-neutral-400 uppercase sm:text-[10px] sm:tracking-[0.16em]">
-                    Swipe or arrows · Hover = front &amp; name · Tap = open
+                    <span className="sm:hidden">
+                      Swipe · Tap = front &amp; name · Tap again = open
+                    </span>
+                    <span className="hidden sm:inline">
+                      Swipe or arrows · Hover = front &amp; name · Click = open
+                    </span>
                   </p>
                 )}
               </motion.div>
