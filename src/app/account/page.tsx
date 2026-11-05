@@ -10,7 +10,7 @@ export default function AccountPage() {
   return (
     <PageShell
       title="Account"
-      subtitle="Sign in to save sizes, track orders, and sync your GUZE rack across devices."
+      subtitle="Sign in to save sizes, track orders, and sync your BOTE rack across devices."
     >
       <div className="grid gap-5 sm:gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <form className="rounded-[22px] border border-neutral-200 bg-white p-5 shadow-[0_20px_50px_rgba(0,0,0,0.06)] sm:rounded-[28px] sm:p-8 md:p-10">
@@ -28,7 +28,7 @@ export default function AccountPage() {
               </span>
               <input
                 type="email"
-                placeholder="you@guze.com"
+                placeholder="you@bote.com"
                 autoComplete="email"
                 className="w-full rounded-full border border-neutral-300 bg-[#fafafa] px-5 py-3.5 text-base text-neutral-900 outline-none transition focus:border-[#3b449b] focus:bg-white sm:px-6 sm:py-4"
               />

@@ -24,7 +24,7 @@ export function PageShell({
         }`}
       >
         <p className="text-[11px] font-semibold tracking-[0.22em] text-[#3b449b] uppercase sm:text-[12px]">
-          GUZE
+          BOTE
         </p>
         <h1 className="mt-2 text-3xl font-black tracking-[-0.04em] text-neutral-950 sm:mt-3 sm:text-4xl md:text-5xl lg:text-6xl">
           {title}

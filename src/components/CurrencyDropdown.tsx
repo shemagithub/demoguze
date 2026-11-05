@@ -52,7 +52,7 @@ export function CurrencyDropdown() {
           className="inline-block h-3 w-3 shrink-0 overflow-hidden rounded-full border border-neutral-300"
           style={{ background: currency.flag }}
         />
-        {/* Hide code on very narrow phones so it never covers GUZE */}
+        {/* Hide code on very narrow phones so it never covers BOTE */}
         <span className="hidden min-[400px]:inline">{currency.code}</span>
         <svg
           aria-hidden

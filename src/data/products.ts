@@ -5,7 +5,7 @@ const V = "v=10";
 export const PRODUCTS: Product[] = [
   {
     id: "black-polo",
-    title: "GUZE NOIR POLO",
+    title: "BOTE NOIR POLO",
     price: 65000,
     currency: "₦",
     sideImage: `/garments/black-polo-side.png?${V}`,
@@ -16,7 +16,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "navy-polo",
-    title: "GUZE NAVY POLO",
+    title: "BOTE NAVY POLO",
     price: 65000,
     currency: "₦",
     sideImage: `/garments/navy-polo-side.png?${V}`,
@@ -27,7 +27,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "plum-polo",
-    title: "GUZE PLUM POLO",
+    title: "BOTE PLUM POLO",
     price: 65000,
     currency: "₦",
     sideImage: `/garments/plum-polo-side.png?${V}`,
@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "blue-polo",
-    title: "GUZE STRIKE POLO",
+    title: "BOTE STRIKE POLO",
     price: 72000,
     currency: "₦",
     sideImage: `/garments/blue-polo-side.png?${V}`,
@@ -49,7 +49,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "black-hoodie",
-    title: "GUZE VOID HOODIE",
+    title: "BOTE VOID HOODIE",
     price: 89000,
     currency: "₦",
     sideImage: `/garments/black-hoodie-side.png?${V}`,
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "white-hoodie",
-    title: "GUZE CLOUD HOODIE",
+    title: "BOTE CLOUD HOODIE",
     price: 89000,
     currency: "₦",
     sideImage: `/garments/white-hoodie-side.png?${V}`,

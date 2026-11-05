@@ -13,11 +13,11 @@ const display = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "GUZE — Interactive Clothing Rack",
-    template: "%s · GUZE",
+    default: "BOTE — Interactive Clothing Rack",
+    template: "%s · BOTE",
   },
   description:
-    "Guze streetwear rack: swipe to browse, hover for the back, tap to inspect, pick a size, and add to cart.",
+    "BOTE streetwear rack: swipe to browse, hover for the front, tap to inspect, pick a size, and add to cart.",
 };
 
 export const viewport: Viewport = {

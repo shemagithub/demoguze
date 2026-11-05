@@ -31,7 +31,7 @@ export function Header({ dimmed = false }: HeaderProps) {
         href="/"
         className="justify-self-center px-1 text-[18px] font-black tracking-[-0.04em] text-black sm:text-[22px] md:text-[28px]"
       >
-        GUZE
+        BOTE
       </Link>
 
       <div className="flex min-w-0 items-center justify-end gap-0.5 text-neutral-800 sm:gap-2 md:gap-4">

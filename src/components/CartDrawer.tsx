@@ -57,7 +57,7 @@ export function CartDrawer() {
             <div className="flex items-center justify-between border-b border-neutral-200 px-4 pt-[max(1rem,var(--safe-top))] pb-4 sm:px-6 sm:py-5">
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.2em] text-[#3b449b] uppercase">
-                  GUZE
+                  BOTE
                 </p>
                 <h2 className="mt-1 text-lg font-black tracking-[-0.03em] text-neutral-950 sm:text-xl">
                   Cart ({items.length})

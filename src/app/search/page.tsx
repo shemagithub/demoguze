@@ -25,7 +25,7 @@ export default function SearchPage() {
   return (
     <PageShell
       title="Search"
-      subtitle="Find hoodies, tees, jackets, and more across the GUZE rack."
+      subtitle="Find hoodies, tees, jackets, and more across the BOTE rack."
       wide
     >
       <label className="block">

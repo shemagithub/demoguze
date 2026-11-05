@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { PageShell } from "@/components/PageShell";
 
 export const metadata: Metadata = {
@@ -26,17 +25,12 @@ export default function AboutPage() {
   return (
     <PageShell
       title="About"
-      subtitle="GUZE is a streetwear label built around the hanging rack — clean motion, real product photos, and a closet-first shopping feel."
+      subtitle="BOTE is a streetwear label built around the hanging rack — clean motion, real product photos, and a closet-first shopping feel."
     >
       <div className="overflow-hidden rounded-[22px] border border-neutral-200 bg-white p-5 shadow-[0_20px_50px_rgba(0,0,0,0.06)] sm:rounded-[28px] sm:p-8 md:p-12">
-        <Image
-          src="/guze-logo.png"
-          alt="GUZE"
-          width={435}
-          height={180}
-          className="h-12 w-auto sm:h-16 md:h-20"
-          priority
-        />
+        <p className="text-4xl font-black tracking-[-0.04em] text-neutral-950 sm:text-5xl md:text-6xl">
+          BOTE
+        </p>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-700 sm:mt-8 sm:text-lg md:text-xl">
           We started with one idea: shopping clothes online should feel like
           walking into a boutique and pulling pieces from a rail — not scrolling

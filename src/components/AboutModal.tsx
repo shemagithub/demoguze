@@ -35,7 +35,7 @@ export function AboutModal({ open, onClose }: AboutModalProps) {
             >
               ×
             </button>
-            <p className="text-xl font-black tracking-[-0.04em]">UNKNOWN</p>
+            <p className="text-xl font-black tracking-[-0.04em]">BOTE</p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-600">
               Interactive streetwear rack. Drag to browse pieces, click to
               inspect, flip Front / Back, pick a size, and add to cart — a
